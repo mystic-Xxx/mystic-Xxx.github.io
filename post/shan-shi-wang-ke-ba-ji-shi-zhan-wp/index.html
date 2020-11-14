@@ -1,22 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mystic-Xxx.github.io</id>
-    <title>myst1c</title>
-    <updated>2020-11-14T01:04:25.704Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mystic-Xxx.github.io"/>
-    <link rel="self" href="https://mystic-Xxx.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://mystic-Xxx.github.io/images/avatar.png</logo>
-    <icon>https://mystic-Xxx.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, myst1c</rights>
-    <entry>
-        <title type="html"><![CDATA[山石网科靶机实战WP]]></title>
-        <id>https://mystic-Xxx.github.io/post/shan-shi-wang-ke-ba-ji-shi-zhan-wp/</id>
-        <link href="https://mystic-Xxx.github.io/post/shan-shi-wang-ke-ba-ji-shi-zhan-wp/">
-        </link>
-        <updated>2020-11-14T01:01:38.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="writeup">Writeup</h1>
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>山石网科靶机实战WP | myst1c</title>
+
+<link rel="shortcut icon" href="https://mystic-Xxx.github.io/favicon.ico?v=1605315811796">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://mystic-Xxx.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            myst1c
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1605315811796" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    山石网科靶机实战WP
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-11-14 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="writeup">Writeup</h1>
 <h2 id="信息收集记录">信息收集记录：</h2>
 <h3 id="有搞头的页面目录文件信息">有搞头的页面/目录/文件信息</h3>
 <p>部分存在登录、查询、注册、修改等业务的页面和目录遍历、敏感信息等</p>
@@ -171,6 +253,50 @@ if __name__ == '__main__':
 <figure data-type="image" tabindex="21"><img src="https://mystic-Xxx.github.io/post-images/1605315771482.png" alt="" loading="lazy"></figure>
 <h4 id="get-flag">get flag</h4>
 <figure data-type="image" tabindex="22"><img src="https://mystic-Xxx.github.io/post-images/1605315784865.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-</feed>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <h4><b>Red Team@myst1c /CTFer@Web /SRC</b></h4>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://mystic-Xxx.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
